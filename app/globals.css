@@ -18,16 +18,16 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  /* background: linear-gradient(
+  background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb)); */
+    rgb(var(--background-start-rgb));
 }
 .hex {
   --hex-bg-color:  rgb(185, 197, 214);
-  --hex-bg-hover-color:  rgb(148, 167, 193);
+  --hex-bg-hover-color:  rgb(44, 81, 134);
   --hex-width:  4rem;
 
   width: var(--hex-width);
