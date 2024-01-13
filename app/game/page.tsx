@@ -3,10 +3,6 @@ import { useState } from 'react';
 import Button from '../components/Button';
 import GameBoard from '../components/GameBoard';
 import Scoreboard from '../components/Scoreboard';
-// import PreviousMap from "postcss/lib/previous-map"
-
-// const gameHash: {string: number | null} = {}
-// let showNums = true
 
 interface NewHash {
   [key: string]: number;

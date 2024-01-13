@@ -20,7 +20,7 @@ export default function GameBoard({
     [16, 3],
   ];
   
-  let values: Array<string|number> = [];
+  let values: Array<string | number> = [];
 
   if (showNums) {
     values = Object.values(gameObject);
