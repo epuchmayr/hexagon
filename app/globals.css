@@ -30,50 +30,24 @@ body {
   --hex-color: rgb(32, 59, 97);
   --hex-bg-hover-color:  rgb(44, 81, 134);
   --hex-width: 8rem;
-  --hex-peak-height: 1.25rem;
 
   width: var(--hex-width);
-  height: calc(var(--hex-width) * .6);
+  height: calc(var(--hex-width) * 1.07);
   font-size: 2.5rem;
   position: relative;
-  margin: 1.1rem .15rem;
+  margin: -.9rem .15rem;
   background-color: var(--hex-bg-color);
   color: var(--hex-color);
-}
-
-.hex::before {
-  width: 0;
-  height: var(--hex-peak-height);
-  content: '';
-  border-bottom: calc(var(--hex-width) / 4) solid var(--hex-bg-color);
-  border-left: calc(var(--hex-width) / 2) solid transparent;
-  border-right: calc(var(--hex-width) / 2) solid transparent;
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-}
-.hex::after {
-  width: 0;
-  height: var(--hex-peak-height);
-  content: '';
-  border-top: calc(var(--hex-width) / 4) solid var(--hex-bg-color);
-  border-left: calc(var(--hex-width) / 2) solid transparent;
-  border-right: calc(var(--hex-width) / 2) solid transparent;
-  position: absolute;
-  top: 100%;
-  left: 0;
+  clip-path: polygon(0% 25%,0% 75%,50% 100%,100% 75%,100% 25%,50% 0%);
 }
 
 .hex:hover {
   background-color: var(--hex-bg-hover-color);
 }
-.hex:hover::before {
-  border-bottom-color: var(--hex-bg-hover-color);
-}
-.hex:hover::after {
-  border-top-color: var(--hex-bg-hover-color);
-}
 
 .hex.selected-true {
-  --hex-bg-color:  rgb(147, 235, 153);
+  --hex-bg-color: rgb(147, 235, 153);
+}
+.hex.allowed-false {
+  --hex-bg-color: rgb(53, 56, 53);
 }
